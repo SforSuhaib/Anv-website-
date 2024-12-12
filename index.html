@@ -7,17 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="timeline">
-        <div class="year" id="year-2022">2022</div>
-        <div class="year" id="year-2023">2023</div>
-        <div class="year" id="year-2024">
-            2024
-            <img src="house.png" alt="House" class="house">
+
+    <!-- The moving car and house animation -->
+    <div id="animation-container">
+        <img id="car" src="car.png" alt="Car">
+        <img id="house" src="house2024.jpg" alt="House">
+    </div>
+
+    <!-- Display the note and photos -->
+    <div id="photo-slides">
+        <div class="slide" id="photo1">
+            <img src="photo1.jpg" alt="Photo 1">
         </div>
-        <div class="car">
-            <img src="car.png" alt="Car">
+        <div class="slide" id="photo2">
+            <img src="photo2.jpg" alt="Photo 2">
         </div>
     </div>
+
+    <!-- Letter Section -->
+    <div id="letter">
+        <h2>Happy Anniversary, [Her Name]!</h2>
+        <p>Your letter content goes here. Write something special for her!</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
