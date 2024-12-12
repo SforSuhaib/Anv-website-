@@ -1,40 +1,56 @@
+/* Basic Styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #f9d423, #ff4e50);
-    height: 100vh;
-    overflow: hidden;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
-.timeline {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80%;
+#animation-container {
     position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
 }
 
-.year {
-    font-size: 2rem;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.car {
+#car {
     position: absolute;
-    top: 70%;
-    left: 0;
-    transition: left 3s ease-in-out;
+    bottom: 10px;
+    left: -150px;  /* Starts off-screen */
+    width: 100px;
+    transition: left 5s ease-in-out; /* Smooth movement */
 }
 
-.car img {
-    width: 100px;
+#house {
+    width: 300px;
+    margin-top: -100px;
 }
 
-.house {
-    width: 100px;
-    margin-top: 20px;
+/* Slide Show Styling */
+#photo-slides {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.slide {
+    display: none;
+    margin: 0 20px;
+    width: 200px;
+}
+
+#letter {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#letter h2 {
+    color: #FF6347;
+}
+
+/* Show the first slide */
+#photo1 {
+    display: block;
 }
