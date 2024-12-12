@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9d423, #ff4e50);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    position: relative;
+}
+
+.year {
+    font-size: 2rem;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.car {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    transition: left 3s ease-in-out;
+}
+
+.car img {
+    width: 100px;
+}
+
+.house {
+    width: 100px;
+    margin-top: 20px;
+}
