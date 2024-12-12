@@ -21,4 +21,4 @@ window.onload = function() {
 
         setInterval(showSlide, 3000); // Change slides every 3 seconds
     }
-};
+}; 
